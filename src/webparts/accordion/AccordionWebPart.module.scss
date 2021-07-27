@@ -1,0 +1,36 @@
+@import '~@microsoft/sp-office-ui-fabric-core/dist/sass/SPFabricCore.scss';
+@import '~office-ui-fabric-core/dist/sass/References';
+
+.accordionTitle {
+	@include ms-fontWeight-semibold;
+	@include ms-fontSize-20;
+	margin-top: 0;
+	margin-bottom: 1rem;
+}
+
+.accordion {
+	font-family: inherit !important;
+
+	.title {
+		background: none;
+		@include ms-bgColor-themePrimary;
+		@include ms-fontSize-14;
+		@include ms-fontWeight-regular;
+		color: $ms-color-white;
+		border: none;
+		border-radius: 0;
+		padding: 10px 20px;
+		margin: 0 0 1px;
+		cursor: pointer;
+	}
+
+	.content {
+		font-size: $ms-font-size-m;
+		padding: 15px;
+		border: none;
+		border-radius: 0;
+		color: $ms-color-black;
+		margin-bottom: 1px;
+		background: $ms-color-gray10;
+	}
+}
